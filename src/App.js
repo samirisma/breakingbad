@@ -18,7 +18,7 @@ const App = () => {
     const fetchItems = async () =>{
       setIsLoading(true);
       const response = await axios(`https://www.breakingbadapi.com/api/characters?name=${query}`);
-      console.log(response.data);
+     
       setItems(response.data);
       setIsLoading(false);
     }
